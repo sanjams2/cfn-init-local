@@ -46,10 +46,10 @@ cfn-init-local --help
 
 ### Building Docker Images
 Users will likely need to build their own Docker images that mimic the OS they will be launching their EC2 instances
-with. The docker images must have the following:
-- `aws-cfn-bootstrap` installed
-- `iptables` installed
-- `python3` installed
+with. The docker images must have the following installed:
+- [aws-cfn-bootstrap](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)
+- [iptables](https://linux.die.net/man/8/iptables)
+- [python3](https://www.python.org/downloads/)
 
 Some examples of a minimal Dockerfiles that do this can be found [here](cfn_init_local/data/dockerfiles/). 
 I understand at the moment this is slightly cumbersome and puts more work on the user. 
