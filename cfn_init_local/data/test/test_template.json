@@ -1,0 +1,37 @@
+{
+  "Resources": {
+    "MyInstance": {
+      "Type": "AWS::EC2::Instance",
+      "Metadata" : {
+        "AWS::CloudFormation::Init" : {
+          "config": {
+            "files" : {
+              "/tmp/test.txt" : {
+                "content" : "Hello World from CfnInit 1"
+              }
+            },
+            "commands": {
+              "fail": {
+                "command": "echo \"Hello World!\""
+              }
+            }
+          }
+        }
+      }
+    },
+    "MyInstance2": {
+      "Type": "AWS::EC2::Instance",
+      "Metadata" : {
+        "AWS::CloudFormation::Init" : {
+          "config": {
+            "files" : {
+              "/tmp/test.txt" : {
+                "content" : "Hello World from CfnInit 2"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

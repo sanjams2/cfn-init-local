@@ -1,0 +1,91 @@
+{
+  "latest": {
+	"meta-data": {
+	  "profile": "default-hvm",
+	  "network/": {
+		"interfaces/": {
+		  "macs/": {
+			"00:00:00:00:00:00/": {
+			  "local-hostname": "ip-127-0-0-1.us-west-2.compute.internal",
+			  "security-groups": "iamagroup",
+			  "public-hostname": "ec2-127-0-0-1.us-west-2.compute.amazonaws.com",
+			  "vpc-ipv4-cidr-blocks": "127.0.0.1/16",
+			  "subnet-id": "subnet-subnetid",
+			  "public-ipv4s": "127.0.0.1",
+			  "interface-id": "eni-interfaceid",
+			  "mac": "00:00:00:00:00:00",
+			  "security-group-ids": "sg-securitygroupid",
+			  "vpc-ipv4-cidr-block": "127.0.0.1/16",
+			  "ipv4-associations/": {
+				"127.0.0.1": "127.0.0.1"
+			  },
+			  "owner-id": "012345678910",
+			  "subnet-ipv4-cidr-block": "127.0.0.1/20",
+			  "vpc-id": "vpc-vpcid",
+			  "device-number": "0",
+			  "local-ipv4s": "127.0.0.1"
+			}
+		  }
+		}
+	  },
+	  "iam/": {
+		"info": "{\n  \"Code\" : \"Success\",\n  \"LastUpdated\" : \"2019-05-03T17:19:10Z\",\n  \"InstanceProfileArn\" : \"arn:aws:iam::012345678910:instance-profile/iamarole\",\n  \"InstanceProfileId\" : \"iamaprofileid\"\n}",
+		"security-credentials/": {
+		  "UpdateServerRole": "{\n  \"Code\" : \"Success\",\n  \"LastUpdated\" : \"2019-05-03T17:18:52Z\",\n  \"Type\" : \"AWS-HMAC\",\n  \"AccessKeyId\" : \"iamaaccesskeyid\",\n  \"SecretAccessKey\" : \"iamasecretkeyid\",\n  \"Token\" : \"iamatoken\",\n  \"Expiration\" : \"2019-05-03T23:35:30Z\"\n}"
+		}
+	  },
+	  "identity-credentials/": {
+		"ec2/": {
+		  "info": "{\n  \"Code\" : \"Success\",\n  \"LastUpdated\" : \"2019-05-03T17:15:52Z\",\n  \"AccountId\" : \"012345678910\"\n}",
+		  "security-credentials/": {
+			"ec2-instance": "{\n  \"Code\" : \"Success\",\n  \"LastUpdated\" : \"2019-05-03T17:17:03Z\",\n  \"Type\" : \"AWS-HMAC\",\n  \"AccessKeyId\" : \"iamaaccesskeyid\",\n  \"SecretAccessKey\" : \"iamasecretaccesskey\",\n  \"Token\" : \"iamatoken\",\n  \"Expiration\" : \"2019-05-03T23:51:43Z\"\n}"
+		  }
+		}
+	  },
+	  "security-groups": "iamagroup",
+	  "services/": {
+		"domain": "amazonaws.com",
+		"partition": "aws"
+	  },
+	  "metrics/": {
+		"vhostmd": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+	  },
+	  "mac": "00:00:00:00:00:00",
+	  "public-keys/": "0=iamakey",
+	  "public-ipv4": "127.0.0.1",
+	  "ami-manifest-path": "(unknown)",
+	  "events/": {
+		"maintenance/": {
+		  "scheduled": "[]",
+		  "history": "[]"
+		}
+	  },
+	  "instance-type": "t2.micro",
+	  "instance-id": "i-instanceid",
+	  "local-ipv4": "127.0.0.1",
+	  "placement/": {
+		"availability-zone": "us-west-2a"
+	  },
+	  "local-hostname": "ip-127-0-0-1.us-west-2.compute.internal",
+	  "ami-launch-index": "0",
+	  "public-hostname": "ec2-127-0-0-1.us-west-2.compute.amazonaws.com",
+	  "hostname": "ip-127-0-0-1.us-west-2.compute.internal",
+	  "ami-id": "ami-amiid",
+	  "instance-action": "none",
+	  "block-device-mapping/": {
+		"ami": "/dev/xvda",
+		"root": "/dev/xvda"
+	  },
+	  "reservation-id": "r-reservationid"
+	},
+	"dynamic": {
+	  "instance-identity/": {
+		"document": "{\n  \"accountId\" : \"012345678910\",\n  \"availabilityZone\" : \"us-west-2a\",\n  \"kernelId\" : null,\n  \"ramdiskId\" : null,\n  \"pendingTime\" : \"2019-05-01T17:09:53Z\",\n  \"architecture\" : \"x86_64\",\n  \"privateIp\" : \"127.0.0.1\",\n  \"devpayProductCodes\" : null,\n  \"marketplaceProductCodes\" : null,\n  \"version\" : \"2017-09-30\",\n  \"imageId\" : \"ami-amiid\",\n  \"billingProducts\" : null,\n  \"instanceId\" : \"i-instanceid\",\n  \"instanceType\" : \"t2.micro\",\n  \"region\" : \"us-west-2\"\n}",
+		"signature": "iamasignature",
+		"pkcs7": "iamapks7",
+		"rsa2048": "iamarsa2048"
+	  }
+	},
+	"user-data": ""
+  }
+}

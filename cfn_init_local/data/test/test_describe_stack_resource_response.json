@@ -1,0 +1,19 @@
+{	
+	"DescribeStackResourceResponse": {
+		"DescribeStackResourceResult": {
+		    "StackResourceDetail": {
+		        "StackId": "STACK_ID_PLACEHOLDER",
+		        "ResourceStatus": "CREATE_COMPLETE",
+		        "DriftInformation": {
+		            "StackResourceDriftStatus": "NOT_CHECKED"
+		        },
+		        "ResourceType": "RESOURCE_TYPE_PLACEHOLDER",
+		        "LastUpdatedTimestamp": 1557817451.95397,
+		        "StackName": "STACK_NAME_PLACEHOLDER",
+		        "PhysicalResourceId": "PHYSICAL_RESOURCE_ID_PLACEHOLDER",
+		        "Metadata": "{\"foo\":\"bar\"}",
+		        "LogicalResourceId": "LOGICAL_RESOURCE_ID_PLACEHOLDER"
+		    }
+		}
+	}
+}
