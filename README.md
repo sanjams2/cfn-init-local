@@ -15,7 +15,7 @@ testing of your CloudFormation Init stanzas to seconds.
 ## Getting started
 ### Installation
 ```bash
-pip3 install --user git+https://gitlab.com/sanjams/cfn-init-local
+pip3 install --user git+https://github.com/jsanders67/cfn-init-local
 ```
 
 ### Example 
@@ -51,8 +51,8 @@ with. The docker images must have the following:
 - `iptables` installed
 - `python3` installed
 
-An example of a minimal Dockerfile that does this can be found [here](cfn_init_local/data/dockerfiles/alinux2/Dockerfile)
-in this package. I understand at the moment this is slightly cumbersome and puts more work on the user. 
+Some examples of a minimal Dockerfiles that do this can be found [here](cfn_init_local/data/dockerfiles/). 
+I understand at the moment this is slightly cumbersome and puts more work on the user. 
 I am working on making this process easier so that users can simply bring their image and the necessary
 libraries will be installed at runtime.   
 
